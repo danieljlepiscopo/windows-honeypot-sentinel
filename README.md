@@ -19,9 +19,7 @@ Detailed steps: [setup/azure_vm_sentinel_setup.md](https://github.com/danieljlep
 ## Visualizing Attacks 📊 
 Enrichment and Queries
 - Upload a Watchlist mapping IPs to country/geolocation info: [queries/geoip-summarized.csv](https://github.com/danieljlepiscopo/windows-honeypot-sentinel/blob/main/queries/geoip-summarized.csv)
-- Use custom KQL queries to pull attacker IPs and visualize them: queries/ip_geolocation_query.kql
-
-Dashboard Example:
+- Use custom KQL queries to pull attacker IPs and visualize them: [queries/ip_geolocation_query.kql](https://github.com/danieljlepiscopo/windows-honeypot-sentinel/blob/main/queries/ip_geolocation_query.kql)
 
 ## Project Structure 📂
 windows-honeypot-sentinel:
@@ -32,7 +30,8 @@ windows-honeypot-sentinel:
 * queries/
     - geoip-summarized.csv
     - ip_geolocation_query.kql
-    - attack_map_dashboard.kql
+* map/
+    - attack_map_dashboard.json
 * images/
     - dashboard_screenshot.png
     
