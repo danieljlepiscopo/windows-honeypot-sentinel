@@ -8,7 +8,7 @@ This project sets up a Windows 10 honeypot in Microsoft Azure, connects it to Mi
 - Build an interactive global attack map inside Sentinel.
 
 ## Setup Guide 🛠️
-### 1. Create/Configure the Azure VM and Connect VM Logs to Microsoft Sentinel
+### Create/Configure the Azure VM and Connect VM Logs to Microsoft Sentinel
 - Deploy a Windows 10 virtual machine.
 - Harden it lightly to make it look real but vulnerable (optional: weak passwords, open RDP).
 - Set up a Log Analytics Workspace.
