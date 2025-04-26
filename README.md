@@ -14,7 +14,7 @@ This project sets up a Windows 10 honeypot in Microsoft Azure, connects it to Mi
 - Set up a Log Analytics Workspace.
 - Connect Windows event logs to Sentinel.
   
-Detailed steps: ``[setup/azure_vm_sentinel_setup.md](https://github.com/danieljlepiscopo/windows-honeypot-sentinel/blob/main/setup/azure_vm_and_sentinel_setup.md)``
+Detailed steps: [setup/azure_vm_sentinel_setup.md](https://github.com/danieljlepiscopo/windows-honeypot-sentinel/blob/main/setup/azure_vm_and_sentinel_setup.md)
 
 ## Visualizing Attacks 📊 
 Enrichment and Queries
