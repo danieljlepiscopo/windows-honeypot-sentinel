@@ -22,18 +22,22 @@ Enrichment and Queries
 - Use custom KQL queries to pull attacker IPs and visualize them: [queries/ip_geolocation_query.kql](https://github.com/danieljlepiscopo/windows-honeypot-sentinel/blob/main/queries/ip_geolocation_query.kql)
 
 ## Project Structure 📂
-windows-honeypot-sentinel:
-* README.md
-* architecture-diagram.png
-* setup/
-    - azure_vm_sentinel_setup.md
-* queries/
-    - geoip-summarized.csv
-    - ip_geolocation_query.kql
-* map/
-    - attack_map_dashboard.json
-* images/
-    - dashboard_screenshot.png
+ ```
+windows-honeypot-sentinel/
+├── README.md
+├── architecture-diagram.png
+├── setup/
+│   ├── azure_vm_sentinel_setup.md
+├── queries/
+│   ├── geoip-summarized.csv
+│   ├── ip_geolocation_query.kql
+├── map/
+│   └── attack_map_dashboard.json
+├── logs/
+│   └── sample_sysmon_events.json
+└── images/
+    └── dashboard_screenshot.png
+ ```
     
 ## Skills Demonstrated 🧠
 - Cloud security architecture (Azure + Sentinel)
