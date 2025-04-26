@@ -29,7 +29,7 @@ This guide will walk you through setting up a Windows honeypot VM in Azure, forw
 
 ### 4. Edit Network Security Group (NSG)
 - Find the NSG linked to your VM (ex: ``vm-web01-nyc-corp-local-nsg``).
-- Delete default RDP inbound rule.
+- Delete the default RDP inbound rule.
 - Add a new inbound rule: Allow **Any** Source, **Any** Port, **Any** Destination, Service: Custom, Priority: **100**, Name: ``DANGER_AllowAnyCustomAnyInbound``.
 
 ### 5. Disable Windows Firewall on the VM
