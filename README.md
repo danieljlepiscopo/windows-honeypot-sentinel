@@ -8,21 +8,17 @@ This project sets up a Windows 10 honeypot in Microsoft Azure, connects it to Mi
 - Build an interactive global attack map inside Sentinel.
 
 ## Setup Guide 🛠️
-### 1. Create and Configure the Azure VM
+### 1. Create/Configure the Azure VM and Connect VM Logs to Microsoft Sentinel
 - Deploy a Windows 10 virtual machine.
 - Harden it lightly to make it look real but vulnerable (optional: weak passwords, open RDP).
-  
-Detailed steps: setup/azure_vm_setup.md
-
-### 2. Connect VM Logs to Microsoft Sentinel
 - Set up a Log Analytics Workspace.
 - Connect Windows event logs to Sentinel.
-
-Instructions: setup/sentinel_connector_setup.md
+  
+Detailed steps: setup/azure_vm_sentinel_setup.md
 
 ## Visualizing Attacks 📊 
 Enrichment and Queries
-- Upload a Watchlist mapping IPs to country/geolocation info: queries/geolocation_watchlist.csv
+- Upload a Watchlist mapping IPs to country/geolocation info: queries/geoip-summarized.csv
 - Use custom KQL queries to pull attacker IPs and visualize them: queries/ip_geolocation_query.kql
 
 Dashboard Example:
@@ -32,10 +28,9 @@ windows-honeypot-sentinel:
 * README.md
 * architecture-diagram.png
 * setup/
-    - azure_vm_setup.md
-    - sentinel_connector_setup.md
+    - azure_vm_sentinel_setup.md
 * queries/
-    - geolocation_watchlist.csv
+    - geoip-summarized.csv
     - ip_geolocation_query.kql
     - attack_map_dashboard.kql
 * images/
