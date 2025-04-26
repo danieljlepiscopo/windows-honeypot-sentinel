@@ -33,8 +33,6 @@ windows-honeypot-sentinel/
 │   ├── ip_geolocation_query.kql
 ├── map/
 │   └── attack_map_dashboard.json
-├── logs/
-│   └── sample_sysmon_events.json
 └── images/
     └── dashboard_screenshot.png
  ```
