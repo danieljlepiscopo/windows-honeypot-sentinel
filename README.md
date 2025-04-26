@@ -14,11 +14,11 @@ This project sets up a Windows 10 honeypot in Microsoft Azure, connects it to Mi
 - Set up a Log Analytics Workspace.
 - Connect Windows event logs to Sentinel.
   
-Detailed steps: setup/azure_vm_sentinel_setup.md
+Detailed steps: ``[setup/azure_vm_sentinel_setup.md](https://github.com/danieljlepiscopo/windows-honeypot-sentinel/blob/main/setup/azure_vm_and_sentinel_setup.md)``
 
 ## Visualizing Attacks 📊 
 Enrichment and Queries
-- Upload a Watchlist mapping IPs to country/geolocation info: queries/geoip-summarized.csv
+- Upload a Watchlist mapping IPs to country/geolocation info: [queries/geoip-summarized.csv](https://github.com/danieljlepiscopo/windows-honeypot-sentinel/blob/main/queries/geoip-summarized.csv)
 - Use custom KQL queries to pull attacker IPs and visualize them: queries/ip_geolocation_query.kql
 
 Dashboard Example:
