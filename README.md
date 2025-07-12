@@ -27,10 +27,10 @@ windows-honeypot-sentinel/
 ├── README.md
 ├── architecture-diagram.png
 ├── setup/
-│   ├── azure_vm_sentinel_setup.md
+│   └── azure_vm_sentinel_setup.md
 ├── queries/
 │   ├── geoip-summarized.csv
-│   ├── ip_geolocation_query.kql
+│   └── ip_geolocation_query.kql
 ├── map/
 │   └── attack_map_dashboard.json
 └── images/
