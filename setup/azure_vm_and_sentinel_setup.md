@@ -175,4 +175,8 @@ Lastly, to create our Attack Map, we'll go back to Sentinel and click on our Sen
 - Save the Workbook; you can name it anything. I called mine: ``Windows VM Attack Map``. Save it to the resource group.
 - Click "Save As".
 
-You now have a fully functioning Azure-based honeypot that collects security logs, enriches them with geolocation data, and visualizes the attack origins worldwide!
+Tip: You can click on "Map Settings" where the JSON code is located and change the values around.
+- This makes the map more customizable when it comes to colors, variables, etc. 
+
+## Conclusion
+Once the Attack Map is completed, you might have to wait for more attempts by attackers trying to break into the VM for the map to light up more around the world. Having cities and countries related to the Map can teach you a lot about where potential hackers could be located, and that keeping a device unprotected on the internet leaves you vulnerable to immediate threats. 
