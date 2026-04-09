@@ -12,7 +12,7 @@ This is where we will create our virtual machine, forward our logs to Sentinel, 
 
 ### Set up supporting resources:
 
-### 1. Create a Resource Group
+### A. Create a Resource Group
 We need to create a Resource Group, which is almost like a folder for our cloud resources.
 - Search "Resource Group" in the search bar.
 - Create a new Resource Group.
@@ -20,7 +20,7 @@ We need to create a Resource Group, which is almost like a folder for our cloud 
   * This will mean that when we create something in the cloud, it will be located somewhere on the East Coast in Microsoft's data centers.
 - Then hit "Create." After a minute, our Resource Group should show up.
 
-### 2. Create a Virtual Network
+### B. Create a Virtual Network
 Next, we will need to create a virtual network in order for our VM to eventually be located in (step 3).
 - Search "Virtual Network" in the search bar and create a new Virtual Network.
 - Pick the free subscription again and click on our resource group name - ``RG_SOC_Lab``.
@@ -30,7 +30,7 @@ Next, we will need to create a virtual network in order for our VM to eventually
 - Then go to "Review + Create."
 - Click "Create" and wait until it's deployed.
 
-### 3. Create the Virtual Machine
+### C. Create the Virtual Machine
 Our VM will be the virtual computer in our virtual network; this will be the computer in the cloud!
 - Search "Virtual Machine" in the search bar and create the VM.
 - Pick the free subscription and click on our resource group name - ``RG_SOC_Lab``.
@@ -48,7 +48,7 @@ Our VM will be the virtual computer in our virtual network; this will be the com
 - Once it's deployed, you'll see the "Your deployment is complete."
 If you go back to the Resource Group ``RG_SOC_Lab``, you'll now see several virtual computer components for the VM.
 
-### 4. Edit Network Security Group (NSG)
+### D. Edit Network Security Group (NSG)
 Up next, we need to edit our VM's security group to allow bad actors to access the VM on our virtual network.
 - Click on the Network Security Group option, it should be labeled: ``vm-web01-nyc-corp-local-nsg`` (Based on our VM).
 - In the Inbound Security Rules, we will delete the 300 RDP (Remote Desktop Protocol) default rule and create a new inbound rule.
@@ -64,7 +64,7 @@ Up next, we need to edit our VM's security group to allow bad actors to access t
 
 !!! **WARNING**: This will allow ANY inbound traffic to freely try to log in to this VM - this is extremely dangerous, so be careful !!!
 
-### 5. Disable Windows Firewall on the VM
+### E. Disable Windows Firewall on the VM
 With our NSG setup, we're going to log into our VM and turn off the Windows Firewall on it.
 - Search "Virtual Machine" in the search bar and click on our VM - ``vm-web01-nyc-corp-local``.
 - Find the Public IP address of the VM. This is what we will use to connect.
