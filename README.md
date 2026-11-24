@@ -1,6 +1,8 @@
 # Windows Honeypot in Azure with Microsoft Sentinel Attack Map
 This project sets up a Windows 10 honeypot in Microsoft Azure, connects it to Microsoft Sentinel, enriches attacker IPs with geolocation data, and visualizes global attacks using an interactive dashboard.
 
+[Attack Map](https://github.com/danieljlepiscopo/windows-honeypot-sentinel/blob/main/images/dashboard_screenshot.png)
+
 ## Project Overview
 - Deploy a Windows 10 VM as a honeypot in Azure.
 - Send logs to Microsoft Sentinel via a Log Analytics Workspace.
